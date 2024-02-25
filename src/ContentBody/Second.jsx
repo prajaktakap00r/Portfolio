@@ -9,20 +9,20 @@ import Typography from "@mui/material/Typography";
 export default function Profile() {
   return (
     <Card
-      sx={{ maxWidth: 345, m: 2, display: "inline-block" }}
+      sx={{ maxWidth: 1600, height: 600, m: 2 }}
       style={{ backgroundColor: "#735DA5" }}
     >
-      <CardMedia
+      {/* <CardMedia
         component="img"
         alt="prajaktaKapoor"
         height="350"
         image="../src/images/img2.png"
-      />
+      /> */}
       <CardContent>
         <Typography gutterBottom variant="h5" component="div" color="white">
           Prajakta Kapoor
         </Typography>
-        <Typography variant="body2" color="#D3C5E5">
+        <Typography variant="body2" color="white">
           Passionate software developer, committed to writing clean, efficient,
           and dynamic code that makes a difference. Always learning, always
           growing, I'm excited to join a team that values innovation,
@@ -30,18 +30,10 @@ export default function Profile() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button
-          href="https://linkedin.com/in/prajaktakap00r/"
-          size="small"
-          sx={{ color: "white" }}
-        >
+        <Button href="https://linkedin.com/in/prajaktakap00r/" size="small">
           Linkedin
         </Button>
-        <Button
-          href="https://GitHub.com/prajaktakap00r/"
-          size="small"
-          sx={{ color: "white" }}
-        >
+        <Button href="https://GitHub.com/prajaktakap00r/" size="small">
           GitHub
         </Button>
       </CardActions>
