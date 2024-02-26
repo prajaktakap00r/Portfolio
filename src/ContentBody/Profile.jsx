@@ -9,8 +9,8 @@ import Typography from "@mui/material/Typography";
 export default function Profile() {
   return (
     <Card
-      sx={{ maxWidth: 345, m: 2, display: "inline-block" }}
-      style={{ backgroundColor: "#735DA5" }}
+      sx={{ maxWidth: 345, m: 2, ml: 4.5, display: "inline-block" }}
+      style={{ backgroundColor: "#735DA5", scrollBehavior: "smooth" }}
     >
       <CardMedia
         component="img"

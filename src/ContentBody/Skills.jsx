@@ -39,7 +39,13 @@ export default function Profile() {
   };
   return (
     <Card
-      sx={{ maxWidth: 1175, height: 587, m: 2, display: "inline-block" }}
+      sx={{
+        maxWidth: 1175,
+        height: 587,
+        m: 2,
+        mr: 1,
+        display: "inline-block",
+      }}
       style={{ backgroundColor: "#735DA5" }}
     >
       <CardContent sx={{ width: 1105 }}>

@@ -9,34 +9,89 @@ import Typography from "@mui/material/Typography";
 export default function Profile() {
   return (
     <Card
-      sx={{ maxWidth: 1600, height: 600, m: 2 }}
+      sx={{
+        maxWidth: 1520,
+        height: 700,
+        m: 2,
+        paddingTop: 2,
+        zIndex: 3,
+      }}
       style={{ backgroundColor: "#735DA5" }}
     >
-      {/* <CardMedia
-        component="img"
-        alt="prajaktaKapoor"
-        height="350"
-        image="../src/images/img2.png"
-      /> */}
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div" color="white">
-          Prajakta Kapoor
-        </Typography>
-        <Typography variant="body2" color="white">
-          Passionate software developer, committed to writing clean, efficient,
-          and dynamic code that makes a difference. Always learning, always
-          growing, I'm excited to join a team that values innovation,
-          creativity, and a commitment to excellence.
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button href="https://linkedin.com/in/prajaktakap00r/" size="small">
-          Linkedin
-        </Button>
-        <Button href="https://GitHub.com/prajaktakap00r/" size="small">
-          GitHub
-        </Button>
-      </CardActions>
+      <h1 style={{ color: "White", textAlign: "center" }}>PROJECTS</h1>
+      <Card
+        sx={{
+          maxWidth: 500,
+          height: 250,
+          m: 2,
+
+          zIndex: 1,
+          display: "inline-block",
+        }}
+        style={{ backgroundColor: "#D3C5E5", width: 466 }}
+      >
+        A
+      </Card>
+      <Card
+        sx={{
+          maxWidth: 500,
+          height: 250,
+          m: 2,
+          zIndex: 1,
+          display: "inline-block",
+        }}
+        style={{ backgroundColor: "#D3C5E5", width: 466 }}
+      >
+        B
+      </Card>
+      <Card
+        sx={{
+          maxWidth: 500,
+          height: 250,
+          m: 2,
+          zIndex: 1,
+          display: "inline-block",
+        }}
+        style={{ backgroundColor: "#D3C5E5", width: 485 }}
+      >
+        A
+      </Card>
+      <Card
+        sx={{
+          maxWidth: 500,
+          height: 250,
+          m: 2,
+          zIndex: 1,
+          display: "inline-block",
+        }}
+        style={{ backgroundColor: "#D3C5E5", width: 466 }}
+      >
+        B
+      </Card>
+      <Card
+        sx={{
+          maxWidth: 500,
+          height: 250,
+          m: 2,
+          zIndex: 1,
+          display: "inline-block",
+        }}
+        style={{ backgroundColor: "#D3C5E5", width: 466 }}
+      >
+        A
+      </Card>
+      <Card
+        sx={{
+          maxWidth: 500,
+          height: 250,
+          m: 2,
+          zIndex: 1,
+          display: "inline-block",
+        }}
+        style={{ backgroundColor: "#D3C5E5", width: 485 }}
+      >
+        B
+      </Card>
     </Card>
   );
 }
