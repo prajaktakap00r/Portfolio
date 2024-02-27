@@ -5,6 +5,8 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function Profile() {
   return (
@@ -29,6 +31,7 @@ export default function Profile() {
           creativity, and a commitment to excellence.
         </Typography>
       </CardContent>
+
       <CardActions>
         <Button
           href="https://linkedin.com/in/prajaktakap00r/"
@@ -36,13 +39,26 @@ export default function Profile() {
           sx={{ color: "white" }}
         >
           Linkedin
+          <LinkedInIcon
+            sx={{
+              display: { xs: "none", md: "flex", color: "#D3C5E5" },
+              mr: 1,
+            }}
+          />
         </Button>
+
         <Button
           href="https://GitHub.com/prajaktakap00r/"
           size="small"
           sx={{ color: "white" }}
         >
           GitHub
+          <GitHubIcon
+            sx={{
+              display: { xs: "none", md: "flex", color: "#D3C5E5" },
+              mr: 1,
+            }}
+          />
         </Button>
       </CardActions>
     </Card>

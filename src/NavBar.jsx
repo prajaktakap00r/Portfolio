@@ -12,6 +12,9 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import StarOutlineIcon from "@mui/icons-material/StarOutline";
+import StarIcon from "@mui/icons-material/Star";
+import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 
 const pages = ["Profile", "Projects"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -39,7 +42,7 @@ export default function ResponsiveAppBar() {
     <AppBar position="static" style={{ backgroundColor: "#735DA5" }}>
       <Container maxWidth="xxxl">
         <Toolbar disableGutters>
-          <AdbIcon
+          <AutoAwesomeIcon
             sx={{
               display: { xs: "none", md: "flex", color: "#D3C5E5" },
               mr: 1,
