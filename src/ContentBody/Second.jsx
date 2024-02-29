@@ -13,9 +13,9 @@ export default function Second() {
       sx={{ maxWidth: 1600, height: 600, m: 2, overflow: "auto" }}
       style={{ backgroundColor: "#735DA5", marginBottom: "20px" }} // Added margin at the bottom
     >
-      <h1
-        style={{ textAlign: "center", color: "white", marginTop: "20px" }}
-      ></h1>{" "}
+      <h1 style={{ textAlign: "center", color: "white", marginTop: "20px" }}>
+        PROJECTS
+      </h1>{" "}
       {/* Added margin at the top */}
       <Projects />
     </Card>
