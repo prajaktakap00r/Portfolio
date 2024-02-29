@@ -18,25 +18,7 @@ export default function Profile() {
         height="350"
         image="../src/images/img2.png"
       /> */}
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div" color="white">
-          Prajakta Kapoor
-        </Typography>
-        <Typography variant="body2" color="white">
-          Passionate software developer, committed to writing clean, efficient,
-          and dynamic code that makes a difference. Always learning, always
-          growing, I'm excited to join a team that values innovation,
-          creativity, and a commitment to excellence.
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button href="https://linkedin.com/in/prajaktakap00r/" size="small">
-          Linkedin
-        </Button>
-        <Button href="https://GitHub.com/prajaktakap00r/" size="small">
-          GitHub
-        </Button>
-      </CardActions>
+      <h1 style={{ textAlign: "center", color: "white" }}>CONTACT ME</h1>
     </Card>
   );
 }

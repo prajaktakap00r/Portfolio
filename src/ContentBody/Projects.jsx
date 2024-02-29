@@ -1,29 +1,48 @@
+// Projects.jsx
+
 import * as React from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
+import { useTheme } from "@mui/system";
+import { useMediaQuery } from "@mui/material";
 
 export default function Projects() {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+
+  const getColumnCount = () => (isSmallScreen ? 2 : 4);
+
   return (
-    <ImageList sx={{ width: 1400, height: 500, ml: 10 }} cols={4}>
-      {itemData.map((item) => (
-        <ImageListItem key={item.img}>
-          <img
-            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-            src={`${item.img}?w=248&fit=crop&auto=format`}
-            alt={item.title}
-            loading="lazy"
-          />
-          <ImageListItemBar
-            sx={{ color: "white" }}
-            title={item.title}
-            position="below"
-          />
-        </ImageListItem>
-      ))}
-    </ImageList>
+    <div style={{ margin: "0 -8px" }}>
+      {" "}
+      {/* Added negative margin to counteract the gap */}
+      <ImageList sx={{ width: "100%", ml: 2 }} cols={getColumnCount()} gap={8}>
+        {itemData.map((item) => (
+          <ImageListItem key={item.img} style={{ margin: "30px" }}>
+            {" "}
+            {/* Added margin between each project */}
+            <img
+              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+              src={`${item.img}?w=248&fit=crop&auto=format`}
+              alt={item.title}
+              loading="lazy"
+            />
+            <ImageListItemBar
+              sx={{ color: "white" }}
+              title={item.title}
+              position="below"
+            />
+          </ImageListItem>
+        ))}
+      </ImageList>
+    </div>
   );
 }
+
+// Your itemData array remains unchanged...
+
+// Your itemData array remains unchanged...
 
 const itemData = [
   {
