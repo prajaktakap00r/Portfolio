@@ -16,7 +16,6 @@ function App() {
       <div>
         <ResponsiveAppBar />
         <Profile />
-
         <Second />
         <Third />
         <Footer />
