@@ -1,10 +1,11 @@
 import SkillBar from "react-skillbars";
-import * as React from "react";
+import React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/system";
 import { useMediaQuery } from "@mui/material";
+import Grid from "@mui/material/Grid";
 
 export default function MySkills() {
   const theme = useTheme();
@@ -43,15 +44,14 @@ export default function MySkills() {
   return (
     <Card
       sx={{
-        maxWidth: isSmallScreen ? "100%" : 1175,
-        height: isSmallScreen ? "auto" : 587,
-        m: 2,
-        mr: 1,
-        display: "inline-block",
+        width: "100%",
+        margin: "auto",
+        marginTop: 2,
+        marginBottom: 2,
+        backgroundColor: "#735DA5",
       }}
-      style={{ backgroundColor: "#735DA5" }}
     >
-      <CardContent sx={{ width: isSmallScreen ? "100%" : 1105 }}>
+      <CardContent>
         <Typography
           gutterBottom
           variant="h4"
@@ -61,26 +61,30 @@ export default function MySkills() {
         >
           My Skills
         </Typography>
-        <Typography gutterBottom variant="h6" component="div" color="white">
-          Technical Skills
-        </Typography>
 
-        <SkillBar
-          skills={skills}
-          colors={colors}
-          className="custom-skillbar"
-          style={{ width: "100%", marginLeft: isSmallScreen ? "0" : "-20px" }}
-        />
+        <Grid container spacing={2} justifyContent="center">
+          <Grid item xs={12}>
+            <Typography gutterBottom variant="h6" component="div" color="white">
+              Technical Skills
+            </Typography>
+            <SkillBar
+              skills={skills}
+              colors={colors}
+              className="custom-skillbar"
+            />
+          </Grid>
 
-        <Typography gutterBottom variant="h6" component="div" color="white">
-          Interpersonal Skills
-        </Typography>
-        <SkillBar
-          skills={skills1}
-          colors={colors1}
-          className="custom-skillbar"
-          style={{ width: "100%" }}
-        />
+          <Grid item xs={12}>
+            <Typography gutterBottom variant="h6" component="div" color="white">
+              Interpersonal Skills
+            </Typography>
+            <SkillBar
+              skills={skills1}
+              colors={colors1}
+              className="custom-skillbar"
+            />
+          </Grid>
+        </Grid>
       </CardContent>
     </Card>
   );

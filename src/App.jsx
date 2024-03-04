@@ -8,6 +8,7 @@ import Skills from "./ContentBody/Skills";
 import Second from "./ContentBody/Second";
 import Third from "./ContentBody/Third";
 import Footer from "./ContentBody/Footer";
+import ProfileProject from "./ContentBody/ProfileProject";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -16,7 +17,7 @@ function App() {
       <div>
         <ResponsiveAppBar />
         <Profile />
-        <Second />
+        <ProfileProject />
         <Third />
         <Footer />
       </div>
