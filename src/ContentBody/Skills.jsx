@@ -44,7 +44,7 @@ export default function MySkills() {
   return (
     <Card
       sx={{
-        width: "100%",
+        width: "90%",
         margin: "auto",
         marginTop: 2,
         marginBottom: 2,

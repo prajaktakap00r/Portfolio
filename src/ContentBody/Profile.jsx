@@ -11,9 +11,15 @@ import MySkills from "./Skills";
 
 export default function Profile() {
   return (
-    <div style={{ display: "flex", flexDirection: "row" }}>
+    <div style={{ display: "flex", alignItems: "center" }}>
       <Card
-        sx={{ maxWidth: 345, m: 2, ml: 4.5, display: "inline-block" }}
+        sx={{
+          maxWidth: 400,
+          m: 2,
+
+          display: "inline-block",
+          alignContent: "center",
+        }}
         style={{ backgroundColor: "#735DA5", scrollBehavior: "smooth" }}
       >
         <CardMedia
@@ -64,7 +70,6 @@ export default function Profile() {
           </Button>
         </CardActions>
       </Card>
-      <MySkills />
     </div>
   );
 }

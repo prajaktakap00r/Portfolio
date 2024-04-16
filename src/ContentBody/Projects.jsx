@@ -6,6 +6,7 @@ import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import { useTheme } from "@mui/system";
 import { useMediaQuery } from "@mui/material";
+import { alignProperty } from "@mui/material/styles/cssUtils";
 
 export default function Projects() {
   const theme = useTheme();
@@ -14,7 +15,16 @@ export default function Projects() {
   const getColumnCount = () => (isSmallScreen ? 2 : 4);
 
   return (
-    <div style={{ margin: "0 -8px" }}>
+    <Card
+      sx={{
+        width: "90%",
+        margin: "auto",
+
+        marginTop: 2,
+        marginBottom: 2,
+        backgroundColor: "#735DA5",
+      }}
+    >
       {" "}
       {/* Added negative margin to counteract the gap */}
       <ImageList sx={{ width: "100%", ml: 2 }} cols={getColumnCount()} gap={8}>
@@ -36,7 +46,7 @@ export default function Projects() {
           </ImageListItem>
         ))}
       </ImageList>
-    </div>
+    </Card>
   );
 }
 
