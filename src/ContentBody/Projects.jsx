@@ -5,52 +5,59 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import { useTheme } from "@mui/system";
-import { useMediaQuery } from "@mui/material";
+import { CardContent, useMediaQuery } from "@mui/material";
+import Card from "@mui/material/Card";
 import { alignProperty } from "@mui/material/styles/cssUtils";
+import Typography from "@mui/material/Typography";
+
+import Grid from "@mui/material/Grid";
+import { Height } from "@mui/icons-material";
 
 export default function Projects() {
-  const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
-
-  const getColumnCount = () => (isSmallScreen ? 2 : 4);
-
   return (
     <Card
       sx={{
         width: "90%",
         margin: "auto",
-
         marginTop: 2,
         marginBottom: 2,
         backgroundColor: "#735DA5",
       }}
     >
-      {" "}
-      {/* Added negative margin to counteract the gap */}
-      <ImageList sx={{ width: "100%", ml: 2 }} cols={getColumnCount()} gap={8}>
-        {itemData.map((item) => (
-          <ImageListItem key={item.img} style={{ margin: "30px" }}>
-            {" "}
-            {/* Added margin between each project */}
-            <img
-              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              src={`${item.img}?w=248&fit=crop&auto=format`}
-              alt={item.title}
-              loading="lazy"
-            />
-            <ImageListItemBar
-              sx={{ color: "white" }}
-              title={item.title}
-              position="below"
-            />
-          </ImageListItem>
-        ))}
-      </ImageList>
+      <CardContent>
+        <Typography
+          gutterBottom
+          variant="h4"
+          component="div"
+          color="white"
+          style={{ textAlign: "center" }}
+        >
+          Projects
+        </Typography>
+        <ImageList sx={{ width: "100%", ml: 2 }} cols={4} gap={8}>
+          {itemData.map((item) => (
+            <ImageListItem key={item.img} style={{ margin: "30px" }}>
+              {" "}
+              {/* Added margin between each project */}
+              <img
+                style={{ height: "250px" }}
+                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                src={`${item.img}?w=248&fit=crop&auto=format`}
+                alt={item.title}
+                loading="lazy"
+              />
+              <ImageListItemBar
+                sx={{ color: "white" }}
+                title={item.title}
+                position="below"
+              />
+            </ImageListItem>
+          ))}
+        </ImageList>
+      </CardContent>
     </Card>
   );
 }
-
-// Your itemData array remains unchanged...
 
 // Your itemData array remains unchanged...
 

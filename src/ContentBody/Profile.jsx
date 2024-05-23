@@ -14,20 +14,20 @@ export default function Profile() {
     <div style={{ display: "flex", alignItems: "center" }}>
       <Card
         sx={{
-          maxWidth: 400,
-          m: 2,
-
-          display: "inline-block",
-          alignContent: "center",
+          width: "90%",
+          margin: "auto",
+          marginTop: 2,
+          marginBottom: 2,
+          backgroundColor: "#735DA5",
         }}
         style={{ backgroundColor: "#735DA5", scrollBehavior: "smooth" }}
       >
-        <CardMedia
+        {/*  <CardMedia
           component="img"
           alt="prajaktaKapoor"
           height="350"
           image="../src/images/img2.png"
-        />
+        /> */}
         <CardContent>
           <Typography gutterBottom variant="h5" component="div" color="white">
             Prajakta Kapoor

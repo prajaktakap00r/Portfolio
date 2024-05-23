@@ -4,20 +4,18 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/system";
-import { useMediaQuery } from "@mui/material";
 import Grid from "@mui/material/Grid";
 
 export default function MySkills() {
   const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
   const skills = [
     { type: "C++", level: 90 },
-    { type: "React", level: 85 },
-    { type: "ReactNative", level: 20 },
+    { type: "DSA", level: 70 },
+    { type: "MERN", level: 60 },
     { type: "CSS", level: 85 },
     { type: "HTML", level: 90 },
-    { type: "MongoDB", level: 30 },
+    { type: "ML", level: 70 },
   ];
 
   const skills1 = [

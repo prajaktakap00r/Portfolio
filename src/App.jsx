@@ -5,10 +5,10 @@ import "./App.css";
 import ResponsiveAppBar from "./NavBar";
 import Profile from "./ContentBody/Profile";
 import Skills from "./ContentBody/Skills";
-import Second from "./ContentBody/Second";
+import Projects from "./ContentBody/Projects";
 import Third from "./ContentBody/Third";
 import Footer from "./ContentBody/Footer";
-import ProfileProject from "./ContentBody/ProfileProject";
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -18,7 +18,7 @@ function App() {
         <ResponsiveAppBar />
         <Profile />
         <Skills />
-        <ProfileProject />
+        <Projects />
         <Third />
         <Footer />
       </div>

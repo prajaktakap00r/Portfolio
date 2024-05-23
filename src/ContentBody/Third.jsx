@@ -30,45 +30,60 @@ export default function Profile() {
   };
   return (
     <Card
-      sx={{ maxWidth: 1600, height: 600, m: 2 }}
-      style={{ backgroundColor: "#735DA5" }}
+      sx={{
+        width: "90%",
+        margin: "auto",
+        marginTop: 2,
+        marginBottom: 2,
+        backgroundColor: "#735DA5",
+      }}
     >
-      <h1 style={{ textAlign: "center", color: "white" }}>CONTACT ME</h1>
-      <div className="contact-card">
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
+      <CardContent>
+        <Typography
+          gutterBottom
+          variant="h4"
+          component="div"
+          color="white"
+          style={{ textAlign: "center" }}
+        >
+          Contact Me
+        </Typography>
+        <div className="contact-card">
+          <form onSubmit={handleSubmit}>
+            <label htmlFor="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
 
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
 
-          <label htmlFor="message">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            rows="4"
-            required
-          ></textarea>
+            <label htmlFor="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              rows="4"
+              required
+            ></textarea>
 
-          <button type="submit">Submit</button>
-        </form>
-      </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </CardContent>
     </Card>
   );
 }
