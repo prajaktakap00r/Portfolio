@@ -17,7 +17,7 @@ export default function Projects() {
   return (
     <Card
       sx={{
-        width: "90%",
+        width: "98%",
         margin: "auto",
         marginTop: 2,
         marginBottom: 2,

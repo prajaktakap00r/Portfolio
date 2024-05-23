@@ -14,7 +14,7 @@ export default function Profile() {
     <div style={{ display: "flex", alignItems: "center" }}>
       <Card
         sx={{
-          width: "90%",
+          width: "98%",
           margin: "auto",
           marginTop: 2,
           marginBottom: 2,
