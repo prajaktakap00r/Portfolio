@@ -36,12 +36,12 @@ export default function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" style={{ backgroundColor: "#735DA5" }}>
+    <AppBar position="static" style={{ backgroundColor: "#A1C398" }}>
       <Container maxWidth="xxxl">
         <Toolbar disableGutters>
           <AdbIcon
             sx={{
-              display: { xs: "none", md: "flex", color: "#D3C5E5" },
+              display: { xs: "none", md: "flex", color: "#FEFDED" },
               mr: 1,
             }}
           />
@@ -56,7 +56,7 @@ export default function ResponsiveAppBar() {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "#D3C5E5",
+              color: "#FEFDED",
               textDecoration: "none",
             }}
           >
@@ -112,7 +112,7 @@ export default function ResponsiveAppBar() {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "#D3C5E5",
+              color: "#FEFDED",
               textDecoration: "none",
             }}
           >
@@ -123,7 +123,7 @@ export default function ResponsiveAppBar() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "#D3C5E5", display: "block" }}
+                sx={{ my: 2, color: "#FEFDED", display: "block" }}
               >
                 {page}
               </Button>
@@ -134,7 +134,7 @@ export default function ResponsiveAppBar() {
             <Tooltip title="Open settings">
               <IconButton
                 onClick={handleOpenUserMenu}
-                sx={{ p: 0, color: "#D3C5E5" }}
+                sx={{ p: 0, color: "#FEFDED" }}
               >
                 <Avatar
                   alt="Remy Sharp"

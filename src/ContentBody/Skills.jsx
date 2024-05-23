@@ -24,18 +24,18 @@ export default function MySkills() {
   ];
 
   const colors = {
-    bar: "#D3C5E5",
+    bar: "#FEFDED",
     title: {
       text: "#fff",
-      background: "#D4C5E5",
+      background: "#A1C398",
     },
   };
 
   const colors1 = {
-    bar: "#D3C5E5",
+    bar: "#FEFDED",
     title: {
       text: "#fff",
-      background: "#D4C5E5",
+      background: "#A1C398",
     },
   };
 
@@ -46,7 +46,7 @@ export default function MySkills() {
         margin: "auto",
         marginTop: 2,
         marginBottom: 2,
-        backgroundColor: "#735DA5",
+        backgroundColor: "#A1C398",
       }}
     >
       <CardContent>

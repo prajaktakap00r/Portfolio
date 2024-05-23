@@ -3,8 +3,8 @@
   line-height: 1.5;
   font-weight: 401;
   color-scheme: light dark;
-  color: rgba(234, 203, 236, 0.87);
-  background-color: #000000;
+  color:"#F8F4E1";
+  background-color: rgb(254, 253, 237);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

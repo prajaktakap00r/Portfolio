@@ -35,7 +35,7 @@ export default function Profile() {
         margin: "auto",
         marginTop: 2,
         marginBottom: 2,
-        backgroundColor: "#735DA5",
+        backgroundColor: "#A1C398",
       }}
     >
       <CardContent>

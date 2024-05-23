@@ -18,9 +18,8 @@ export default function Profile() {
           margin: "auto",
           marginTop: 2,
           marginBottom: 2,
-          backgroundColor: "#735DA5",
         }}
-        style={{ backgroundColor: "#735DA5", scrollBehavior: "smooth" }}
+        style={{ backgroundColor: "#A1C398", scrollBehavior: "smooth" }}
       >
         {/*  <CardMedia
           component="img"
@@ -32,7 +31,7 @@ export default function Profile() {
           <Typography gutterBottom variant="h5" component="div" color="white">
             Prajakta Kapoor
           </Typography>
-          <Typography variant="body2" color="#D3C5E5">
+          <Typography variant="body2" color="#FEFDED">
             Passionate software developer, committed to writing clean,
             efficient, and dynamic code that makes a difference. Always
             learning, always growing, I'm excited to join a team that values
@@ -44,12 +43,12 @@ export default function Profile() {
           <Button
             href="https://linkedin.com/in/prajaktakap00r/"
             size="small"
-            sx={{ color: "white" }}
+            sx={{ color: "#FEFDED" }}
           >
             Linkedin
             <LinkedInIcon
               sx={{
-                display: { xs: "none", md: "flex", color: "#D3C5E5" },
+                display: { xs: "none", md: "flex", color: "#FEFDED" },
                 mr: 1,
               }}
             />
@@ -58,12 +57,12 @@ export default function Profile() {
           <Button
             href="https://GitHub.com/prajaktakap00r/"
             size="small"
-            sx={{ color: "white" }}
+            sx={{ color: "#FEFDED" }}
           >
             GitHub
             <GitHubIcon
               sx={{
-                display: { xs: "none", md: "flex", color: "#D3C5E5" },
+                display: { xs: "none", md: "flex", color: "#FEFDED" },
                 mr: 1,
               }}
             />
