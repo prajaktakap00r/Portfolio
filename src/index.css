@@ -18,6 +18,7 @@
   color: white;
   background-color: #140524;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+
 }
 
 main h2 {
@@ -37,73 +38,33 @@ main h2 {
 }
 
 #core-concepts li {
-  width: 10rem;
+  width: 20rem;
+  height: 20rem;
   text-align: center;
+  border-radius: 1rem; 
+  border-color: white;
+  border-width: 2px; 
+  border-style: solid;
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+  transition: background-color 0.3s,transfrom 0.3s;
+
+}
+#core-concepts li:hover {
+  transform: scale(1.05); /* Slightly enlarge the element on hover */
+  cursor: pointer; /* Change cursor to pointer */
+  background-color:  #dd51ea;
+  
 }
 
 #core-concepts li img {
-  height: 4rem;
-  width: 6rem;
-  object-fit: cover;
+  height: 8rem;
+  width: 10rem;
+  
 }
 
 #core-concepts li h3 {
   margin: 0.5rem 0;
 }
 
-#core-concepts li p {
-  font-size: 0.9rem;
-}
-
-#examples {
-  margin: 3rem auto;
-}
-
-#examples h2 {
-  text-align: left;
-}
-
-#examples menu {
-  margin: 1rem 0;
-  padding: 0;
-  display: flex;
-  gap: 0.5rem;
-  list-style: none;
-}
-
-#examples menu button {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 6px;
-  background-color: transparent;
-  color: #a18aba;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-#examples menu button:hover {
-  background-color: #1b082f;
-  color: #ebe7ef;
-}
-
-#examples menu button.active {
-  background-color: #7925d3;
-  color: #ebe7ef;
-}
-
-#tab-content {
-  padding: 1rem;
-  border-radius: 6px;
-  background-color: #2f1d43;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-#tab-content h3 {
-  margin: 0;
-}
-
-#tab-content code {
-  font-size: 1rem;
-}
