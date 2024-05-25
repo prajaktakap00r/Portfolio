@@ -39,7 +39,10 @@ export default function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" style={{ backgroundColor: "#A1C398" }}>
+    <AppBar
+      position="static"
+      style={{ background: "radial-gradient(circle, #280a48, #20043d)" }}
+    >
       <Container maxWidth="xxxl">
         <Toolbar disableGutters>
           <AutoAwesomeIcon

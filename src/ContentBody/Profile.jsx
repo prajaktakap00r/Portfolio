@@ -19,7 +19,10 @@ export default function Profile() {
           marginTop: 2,
           marginBottom: 2,
         }}
-        style={{ backgroundColor: "#A1C398", scrollBehavior: "smooth" }}
+        style={{
+          background: "radial-gradient(circle, #280a48, #20043d)",
+          scrollBehavior: "smooth",
+        }}
       >
         {/*  <CardMedia
           component="img"

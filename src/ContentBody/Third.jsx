@@ -31,11 +31,11 @@ export default function Profile() {
   return (
     <Card
       sx={{
-        width: "98%",
+        width: "60%",
         margin: "auto",
         marginTop: 2,
         marginBottom: 2,
-        backgroundColor: "#A1C398",
+        background: "radial-gradient(circle, #280a48, #20043d)",
       }}
     >
       <CardContent>

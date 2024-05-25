@@ -2,13 +2,108 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 401;
+  
+  color: #ffffff; /* You need to set a solid color for text */
+  background: linear-gradient(90deg, #3d0243, #dd51ea, #ec90f3, #580258); /* Correct syntax for gradient background */
   color-scheme: light dark;
-  color:"#F8F4E1";
-  background-color: rgb(254, 253, 237);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#core-concepts {
+  padding: 2rem;
+  border-radius: 6px;
+  color: white;
+  background-color: #140524;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
 
+main h2 {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0 0 1.5rem 0;
+  color: #fff;
+}
+#core-concepts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#core-concepts li {
+  width: 10rem;
+  text-align: center;
+}
+
+#core-concepts li img {
+  height: 4rem;
+  width: 6rem;
+  object-fit: cover;
+}
+
+#core-concepts li h3 {
+  margin: 0.5rem 0;
+}
+
+#core-concepts li p {
+  font-size: 0.9rem;
+}
+
+#examples {
+  margin: 3rem auto;
+}
+
+#examples h2 {
+  text-align: left;
+}
+
+#examples menu {
+  margin: 1rem 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+#examples menu button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #a18aba;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#examples menu button:hover {
+  background-color: #1b082f;
+  color: #ebe7ef;
+}
+
+#examples menu button.active {
+  background-color: #7925d3;
+  color: #ebe7ef;
+}
+
+#tab-content {
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: #2f1d43;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+#tab-content h3 {
+  margin: 0;
+}
+
+#tab-content code {
+  font-size: 1rem;
+}

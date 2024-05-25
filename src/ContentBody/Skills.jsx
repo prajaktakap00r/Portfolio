@@ -24,29 +24,29 @@ export default function MySkills() {
   ];
 
   const colors = {
-    bar: "#FEFDED",
+    bar: "#03d5ff",
     title: {
       text: "#fff",
-      background: "#A1C398",
+      background: "#ea00ff",
     },
   };
 
   const colors1 = {
-    bar: "#FEFDED",
+    bar: "#03d5ff",
     title: {
       text: "#fff",
-      background: "#A1C398",
+      background: "#ea00ff",
     },
   };
 
   return (
     <Card
       sx={{
-        width: "98%",
+        width: "60%",
         margin: "auto",
         marginTop: 2,
         marginBottom: 2,
-        backgroundColor: "#A1C398",
+        background: "radial-gradient(circle, #280a48, #20043d)",
       }}
     >
       <CardContent>
