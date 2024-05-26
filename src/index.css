@@ -22,9 +22,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 
 }
-.custom-skillbar .skillbar .skillbar-percent {
-  color: #140524 !important; /* Change the color to your desired one */
-}
+
 
 main h2 {
   text-align: center;

@@ -63,7 +63,7 @@ export default function Projects() {
         marginTop: 2,
         marginBottom: 2,
         background: "transparent",
-        //backgroundColor: "#140524",
+
         backgroundColor:
           "linear-gradient(90deg, #cf90f3, #a851ea, #cf90f3, #a851ea)",
         boxShadow: "none",
