@@ -35,7 +35,10 @@ export default function Profile() {
         margin: "auto",
         marginTop: 2,
         marginBottom: 2,
-        backgroundColor: "#140524",
+        background: "transparent",
+        boxShadow: "none",
+        backgroundColor:
+          "linear-gradient(90deg, #cf90f3, #a851ea, #cf90f3, #a851ea)",
       }}
     >
       <CardContent>

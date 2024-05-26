@@ -23,6 +23,7 @@ export default function Profile() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          boxShadow: "none",
         }}
       >
         <div

@@ -12,15 +12,11 @@ export default function MySkills() {
   const skills = [
     { type: "C++", level: 90 },
     { type: "DSA", level: 70 },
-    { type: "MERN", level: 60 },
+    { type: "REACT", level: 80 },
+    { type: "MERN", level: 70 },
     { type: "CSS", level: 85 },
     { type: "HTML", level: 90 },
     { type: "ML", level: 70 },
-  ];
-
-  const skills1 = [
-    { type: "Leadership", level: 90 },
-    { type: "Presentation", level: 85 },
   ];
 
   const colors = {
@@ -68,17 +64,6 @@ export default function MySkills() {
             <SkillBar
               skills={skills}
               colors={colors}
-              className="custom-skillbar"
-            />
-          </Grid>
-
-          <Grid item xs={12}>
-            <Typography gutterBottom variant="h6" component="div" color="white">
-              Interpersonal Skills
-            </Typography>
-            <SkillBar
-              skills={skills1}
-              colors={colors1}
               className="custom-skillbar"
             />
           </Grid>

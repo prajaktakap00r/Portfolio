@@ -62,28 +62,30 @@ export default function Projects() {
         margin: "auto",
         marginTop: 2,
         marginBottom: 2,
+
         backgroundColor: "#140524",
+        //backgroundColor:
+        //"linear-gradient(90deg, #cf90f3, #a851ea, #cf90f3, #a851ea)",
+        boxShadow: "none",
       }}
     >
-      <CardContent>
-        <div>
-          <main>
-            <section id="core-concepts">
-              <h2>Projects</h2>
-              <ul>
-                <CoreConcept title={itemData[0].title} img={itemData[0].img} />
-                <CoreConcept {...itemData[1]} />
-                <CoreConcept {...itemData[2]} />
-                <CoreConcept {...itemData[3]} />
-                <CoreConcept {...itemData[4]} />
-                <CoreConcept {...itemData[5]} />
-                <CoreConcept {...itemData[6]} />
-                <CoreConcept {...itemData[7]} />
-              </ul>
-            </section>
-          </main>
-        </div>
-      </CardContent>
+      <div>
+        <main>
+          <section id="core-concepts">
+            <h2>Projects</h2>
+            <ul>
+              <CoreConcept title={itemData[0].title} img={itemData[0].img} />
+              <CoreConcept {...itemData[1]} />
+              <CoreConcept {...itemData[2]} />
+              <CoreConcept {...itemData[3]} />
+              <CoreConcept {...itemData[4]} />
+              <CoreConcept {...itemData[5]} />
+              <CoreConcept {...itemData[6]} />
+              <CoreConcept {...itemData[7]} />
+            </ul>
+          </section>
+        </main>
+      </div>
     </Card>
   );
 }
