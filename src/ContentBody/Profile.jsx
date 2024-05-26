@@ -2,6 +2,7 @@ import * as React from "react";
 import Card from "@mui/material/Card";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import img from "../src/images/coderGirl.svg";
 
 export default function Profile() {
   return (
@@ -43,7 +44,7 @@ export default function Profile() {
           alt="prajaktaKapoor"
           height="550px"
           width="500px"
-          src="../src/images/coderGirl.svg"
+          src={img}
           style={{ display: "inline-block" }}
         />
 
