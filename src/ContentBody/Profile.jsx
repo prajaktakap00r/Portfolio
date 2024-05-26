@@ -1,10 +1,5 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
@@ -21,76 +16,48 @@ export default function Profile() {
       <Card
         sx={{
           width: "98%",
-          height: "500px",
           margin: "auto",
           marginTop: 2,
           marginBottom: 2,
           backgroundColor: "transparent",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
-        <img
-          component="img"
-          alt="prajaktaKapoor"
-          height="450"
-          width="400px"
-          src="../src/images/coderGirl.svg"
-          backgroundColor="white"
-          style={{ display: "inline-block" }}
-        />
-        <Card
-          sx={{
-            width: "60%",
-            margin: "auto",
-            color: "white",
-            marginTop: 2,
-            marginBottom: 2,
-            backgroundColor: "#140524",
-            display: "inline",
-          }}
+        <div
+          id="core-concepts-left"
+          style={{ display: "inline-block", margin: 10, padding: 10 }}
         >
-          Prajakta
-        </Card>
-        {/* <CardContent style={{}}>
-          <Typography gutterBottom variant="h5" component="div" color="white">
-            Prajakta Kapoor
-          </Typography>
-          <Typography variant="body2" color="#FEFDED">
+          <h1>Prajakta Kapoor</h1>
+          <h3>
             Passionate software developer, committed to writing clean,
             efficient, and dynamic code that makes a difference. Always
             learning, always growing, I'm excited to join a team that values
             innovation, creativity, and a commitment to excellence.
-          </Typography>
-        </CardContent>
+          </h3>
+        </div>
 
-        <CardActions>
-          <Button
-            href="https://linkedin.com/in/prajaktakap00r/"
-            size="small"
-            sx={{ color: "#FEFDED" }}
-          >
-            Linkedin
-            <LinkedInIcon
-              sx={{
-                display: { xs: "none", md: "flex", color: "#FEFDED" },
-                mr: 1,
-              }}
-            />
-          </Button>
+        <img
+          alt="prajaktaKapoor"
+          height="550px"
+          width="500px"
+          src="../src/images/coderGirl.svg"
+          style={{ display: "inline-block" }}
+        />
 
-          <Button
-            href="https://GitHub.com/prajaktakap00r/"
-            size="small"
-            sx={{ color: "#FEFDED" }}
-          >
-            GitHub
-            <GitHubIcon
-              sx={{
-                display: { xs: "none", md: "flex", color: "#FEFDED" },
-                mr: 1,
-              }}
-            />
-          </Button>
-        </CardActions> */}
+        <div
+          id="core-concepts-right"
+          style={{ display: "inline-block", margin: 10, padding: 10 }}
+        >
+          <h1>Prajakta Kapoor</h1>
+          <h3>
+            Passionate software developer, committed to writing clean,
+            efficient, and dynamic code that makes a difference. Always
+            learning, always growing, I'm excited to join a team that values
+            innovation, creativity, and a commitment to excellence.
+          </h3>
+        </div>
       </Card>
     </div>
   );

@@ -31,7 +31,7 @@ export default function Profile() {
   return (
     <Card
       sx={{
-        width: "60%",
+        width: "98%",
         margin: "auto",
         marginTop: 2,
         marginBottom: 2,
