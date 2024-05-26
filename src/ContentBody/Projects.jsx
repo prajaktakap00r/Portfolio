@@ -62,7 +62,7 @@ export default function Projects() {
         margin: "auto",
         marginTop: 2,
         marginBottom: 2,
-        background: "radial-gradient(circle, #280a48, #20043d)",
+        backgroundColor: "#140524",
       }}
     >
       <CardContent>

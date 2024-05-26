@@ -7,30 +7,50 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import MySkills from "./Skills";
 
 export default function Profile() {
   return (
-    <div style={{ display: "flex", alignItems: "center" }}>
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        background:
+          "linear-gradient(90deg, #cf90f3, #a851ea, #cf90f3, #a851ea)",
+      }}
+    >
       <Card
         sx={{
           width: "98%",
+          height: "500px",
           margin: "auto",
           marginTop: 2,
           marginBottom: 2,
-        }}
-        style={{
-          background: "radial-gradient(circle, #280a48, #20043d)",
-          scrollBehavior: "smooth",
+          backgroundColor: "transparent",
         }}
       >
-        {/*  <CardMedia
+        <img
           component="img"
           alt="prajaktaKapoor"
-          height="350"
-          image="../src/images/img2.png"
-        /> */}
-        <CardContent>
+          height="450"
+          width="400px"
+          src="../src/images/coderGirl.svg"
+          backgroundColor="white"
+          style={{ display: "inline-block" }}
+        />
+        <Card
+          sx={{
+            width: "60%",
+            margin: "auto",
+            color: "white",
+            marginTop: 2,
+            marginBottom: 2,
+            backgroundColor: "#140524",
+            display: "inline",
+          }}
+        >
+          Prajakta
+        </Card>
+        {/* <CardContent style={{}}>
           <Typography gutterBottom variant="h5" component="div" color="white">
             Prajakta Kapoor
           </Typography>
@@ -70,7 +90,7 @@ export default function Profile() {
               }}
             />
           </Button>
-        </CardActions>
+        </CardActions> */}
       </Card>
     </div>
   );

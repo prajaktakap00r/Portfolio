@@ -4,7 +4,7 @@
   font-weight: 401;
   
   color: #ffffff; /* You need to set a solid color for text */
-  background: linear-gradient(90deg, #3d0243, #dd51ea, #ec90f3, #580258); /* Correct syntax for gradient background */
+  background: linear-gradient(90deg, #cf90f3, #a851ea, #cf90f3, #a851ea); /* Correct syntax for gradient background */
   color-scheme: light dark;
 
   font-synthesis: none;
@@ -54,7 +54,7 @@ main h2 {
 #core-concepts li:hover {
   transform: scale(1.05); /* Slightly enlarge the element on hover */
   cursor: pointer; /* Change cursor to pointer */
-  background-color:  #dd51ea;
+  background-color:  #a851ea;
   
 }
 

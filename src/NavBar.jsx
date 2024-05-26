@@ -12,8 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import StarOutlineIcon from "@mui/icons-material/StarOutline";
-import StarIcon from "@mui/icons-material/Star";
+import img from "./images/coderGirl.svg";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 
 const pages = ["Profile", "Projects"];
@@ -39,10 +38,7 @@ export default function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar
-      position="static"
-      style={{ background: "radial-gradient(circle, #280a48, #20043d)" }}
-    >
+    <AppBar position="static" style={{ background: "#140524" }}>
       <Container maxWidth="xxxl">
         <Toolbar disableGutters>
           <AutoAwesomeIcon
@@ -147,10 +143,7 @@ export default function ResponsiveAppBar() {
                 onClick={handleOpenUserMenu}
                 sx={{ p: 0, color: "#D3C5E5" }}
               >
-                <Avatar
-                  alt="Remy Sharp"
-                  src="https://static.thenounproject.com/png/94090-200.png"
-                />
+                <Avatar alt="Remy Sharp" src={img} />
               </IconButton>
             </Tooltip>
             <Menu

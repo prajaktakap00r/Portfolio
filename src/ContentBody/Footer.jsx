@@ -36,10 +36,7 @@ export default function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar
-      position="static"
-      style={{ background: "radial-gradient(circle, #280a48, #20043d)" }}
-    >
+    <AppBar position="static" style={{ background: "#140524" }}>
       <Container maxWidth="xxxl">
         <Toolbar disableGutters>
           <AdbIcon

@@ -35,7 +35,7 @@ export default function Profile() {
         margin: "auto",
         marginTop: 2,
         marginBottom: 2,
-        background: "radial-gradient(circle, #280a48, #20043d)",
+        backgroundColor: "#140524",
       }}
     >
       <CardContent>
@@ -55,6 +55,9 @@ export default function Profile() {
               type="text"
               id="name"
               name="name"
+              backgroundColor="white"
+              color="white"
+              background="white"
               value={formData.name}
               onChange={handleChange}
               required
@@ -80,7 +83,9 @@ export default function Profile() {
               required
             ></textarea>
 
-            <button type="submit">Submit</button>
+            <button type="submit" style={{ background: "#00B0FF" }}>
+              Submit
+            </button>
           </form>
         </div>
       </CardContent>

@@ -17,9 +17,11 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.10",
     "@mui/material": "^5.15.10",
+    "bootstrap": "^5.3.3",
     "build": "^0.1.4",
     "mui": "^0.0.1",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
     "react-skillbars": "^2.2.0"
