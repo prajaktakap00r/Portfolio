@@ -1,9 +1,6 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
 import "./Card.css";
@@ -28,6 +25,7 @@ export default function Profile() {
     // You can handle form submission logic here
     console.log("Form submitted:", formData);
   };
+
   return (
     <Card
       sx={{
@@ -46,27 +44,29 @@ export default function Profile() {
           gutterBottom
           variant="h4"
           component="div"
-          color="white"
+          color="#140524"
           style={{ textAlign: "center" }}
         >
           Contact Me
         </Typography>
-        <div className="contact-card">
+        <div className="contact-card" style={{ backgroundColor: " #140524" }}>
           <form onSubmit={handleSubmit}>
-            <label htmlFor="name">Name:</label>
+            <label htmlFor="name" style={{ color: "white" }}>
+              Name:
+            </label>
             <input
               type="text"
               id="name"
               name="name"
-              backgroundColor="white"
-              color="white"
-              background="white"
               value={formData.name}
               onChange={handleChange}
               required
+              style={{ backgroundColor: "white" }}
             />
 
-            <label htmlFor="email">Email:</label>
+            <label htmlFor="email" style={{ color: "white" }}>
+              Email:
+            </label>
             <input
               type="email"
               id="email"
@@ -74,9 +74,12 @@ export default function Profile() {
               value={formData.email}
               onChange={handleChange}
               required
+              style={{ backgroundColor: "white" }}
             />
 
-            <label htmlFor="message">Message:</label>
+            <label htmlFor="message" style={{ color: "white" }}>
+              Message:
+            </label>
             <textarea
               id="message"
               name="message"
@@ -84,9 +87,10 @@ export default function Profile() {
               onChange={handleChange}
               rows="4"
               required
+              style={{ backgroundColor: "white" }}
             ></textarea>
 
-            <button type="submit" style={{ background: "#00B0FF" }}>
+            <button type="submit" style={{ backgroundColor: "#00B0FF" }}>
               Submit
             </button>
           </form>

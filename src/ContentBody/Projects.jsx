@@ -62,10 +62,10 @@ export default function Projects() {
         margin: "auto",
         marginTop: 2,
         marginBottom: 2,
-
-        backgroundColor: "#140524",
-        //backgroundColor:
-        //"linear-gradient(90deg, #cf90f3, #a851ea, #cf90f3, #a851ea)",
+        background: "transparent",
+        //backgroundColor: "#140524",
+        backgroundColor:
+          "linear-gradient(90deg, #cf90f3, #a851ea, #cf90f3, #a851ea)",
         boxShadow: "none",
       }}
     >

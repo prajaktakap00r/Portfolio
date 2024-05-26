@@ -5,7 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/system";
 import Grid from "@mui/material/Grid";
-
+import "../index.css";
 export default function MySkills() {
   const theme = useTheme();
 
@@ -23,7 +23,7 @@ export default function MySkills() {
     bar: "#00B0FF",
     title: {
       text: "#fff",
-      background: "#a851ea",
+      background: "#140524",
     },
   };
 
@@ -31,7 +31,7 @@ export default function MySkills() {
     bar: "#00B0FF",
     title: {
       text: "#fff",
-      background: "#a851ea",
+      background: "#140524",
     },
   };
 
@@ -42,7 +42,12 @@ export default function MySkills() {
         margin: "auto",
         marginTop: 2,
         marginBottom: 2,
-        backgroundColor: "#140524",
+
+        background: "transparent",
+        //backgroundColor: "#140524",
+        backgroundColor:
+          "linear-gradient(90deg, #cf90f3, #a851ea, #cf90f3, #a851ea)",
+        boxShadow: "none",
       }}
     >
       <CardContent>
@@ -50,7 +55,7 @@ export default function MySkills() {
           gutterBottom
           variant="h4"
           component="div"
-          color="white"
+          color="#140524"
           style={{ textAlign: "center" }}
         >
           My Skills
@@ -58,9 +63,6 @@ export default function MySkills() {
 
         <Grid container spacing={2} justifyContent="center">
           <Grid item xs={12}>
-            <Typography gutterBottom variant="h6" component="div" color="white">
-              Technical Skills
-            </Typography>
             <SkillBar
               skills={skills}
               colors={colors}
