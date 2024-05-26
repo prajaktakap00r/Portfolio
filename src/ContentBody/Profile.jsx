@@ -1,9 +1,6 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import img from "../src/images/coderGirl.svg";
-
+import img from "../images/coderGirl.svg";
 export default function Profile() {
   return (
     <div
