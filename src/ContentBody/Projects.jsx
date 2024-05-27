@@ -74,14 +74,9 @@ export default function Projects() {
           <section id="core-concepts">
             <h2>Projects</h2>
             <ul>
-              <CoreConcept title={itemData[0].title} img={itemData[0].img} />
-              <CoreConcept {...itemData[1]} />
-              <CoreConcept {...itemData[2]} />
-              <CoreConcept {...itemData[3]} />
-              <CoreConcept {...itemData[4]} />
-              <CoreConcept {...itemData[5]} />
-              <CoreConcept {...itemData[6]} />
-              <CoreConcept {...itemData[7]} />
+              {itemData.map((conceptItems) => (
+                <CoreConcept {...conceptItems} />
+              ))}
             </ul>
           </section>
         </main>
