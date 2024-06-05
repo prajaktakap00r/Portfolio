@@ -19,7 +19,7 @@
   border-radius: 6px;
   color: white;
   background-color: " linear-gradient(90deg, #cf90f3, #a851ea, #cf90f3,  #a851ea)";
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+ 
 
 }
 
@@ -73,3 +73,7 @@ main h2 {
   margin: 0.5rem 0;
 }
 
+#heading{
+  color:"#000000";
+  text-align: center;
+}

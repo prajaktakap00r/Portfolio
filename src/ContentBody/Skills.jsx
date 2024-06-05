@@ -50,15 +50,7 @@ export default function MySkills() {
       }}
     >
       <CardContent>
-        <Typography
-          gutterBottom
-          variant="h4"
-          component="div"
-          color="#140524"
-          style={{ textAlign: "center" }}
-        >
-          My Skills
-        </Typography>
+        <h1 id="heading">My Skills</h1>
 
         <Grid container spacing={2} justifyContent="center">
           <Grid item xs={12}>

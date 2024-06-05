@@ -69,13 +69,13 @@ export default function Projects() {
         boxShadow: "none",
       }}
     >
+      <h1 id="heading">Projects</h1>
       <div>
         <main>
           <section id="core-concepts">
-            <h2>Projects</h2>
             <ul>
               {itemData.map((conceptItems) => (
-                <CoreConcept {...conceptItems} />
+                <CoreConcept key={conceptItems.title} {...conceptItems} />
               ))}
             </ul>
           </section>
